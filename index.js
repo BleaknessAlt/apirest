@@ -2,20 +2,26 @@ const express = require("express");
 const app = express();
 const PORT = false || 8080;
 
-const personas = [
-    {
-        Pablo: "Gilipollas",
-        Antonio: "Fantabuloso",
-    },
-];
+//Endpoints para /concesionarios
+app.get("/concesionarios", (req, res) => {});
 
-app.get("/api", (req, res) => {
-    res.json(personas);
-});
+app.post("/concesionarios", (req, res) => {});
 
-app.post("/api:id", (req, res) => {
-    const id = req.params.id;
-    console.log(personas[id]);
-});
+//Endpoints para concesionarios con una id especifica
+app.get("/concesionarios/:id", (req, res) => {});
 
-app.listen(PORT);
+app.put("/concesionarios/:id", (req, res) => {});
+
+app.delete("/concesionarios/:id", (req, res) => {});
+
+//End points para concesionarios
+app.put("/concesionarios/:id/coches", (req, res) => {});
+
+app.put("/concesionarios/:id/coches", (req, res) => {});
+
+app.put("/concesionarios/:", (req, res) => {});
+
+
+app.get("/concesionarios/:id/coches", (req, res) => {});
+
+app.get("/concesioanrios/:id/coches/:cocheId", (req, res) => {});
